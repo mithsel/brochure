@@ -6,12 +6,12 @@
     <title>UAV Innovation</title>
     <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter for clean typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Fjalla One for a sleek typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles for the Inter font */
+        /* Custom styles for the Fjalla One font */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Fjalla One', sans-serif; /* Changed font to Fjalla One */
             background-color: #FFFFFF; /* White background for the overall page */
         }
         .btn-primary {
@@ -162,8 +162,8 @@
             </div>
 
             <h3 class="text-3xl sm:text-4xl font-bold text-center mb-6 sm:mb-8 text-black">Fee Structure</h3>
-            <div class="mb-12 sm:mb-16">
-                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-xl text-center max-w-md mx-auto transition-all transform hover:scale-105 duration-300 border-b-4 border-yellow-500">
+            <div class="mb-12 sm:mb-16 flex justify-center"> <!-- Added flex justify-center to explicitly center the single card -->
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-xl text-center max-w-md transition-all transform hover:scale-105 duration-300 border-b-4 border-yellow-500 w-full"> <!-- Removed mx-auto from here and added w-full for better responsiveness within flex -->
                     <p class="text-4xl sm:text-5xl font-extrabold text-green-600">₹35,000 <span class="text-xl sm:text-2xl font-normal text-gray-600">+ 18% GST</span></p>
                 </div>
             </div>

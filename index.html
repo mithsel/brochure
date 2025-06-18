@@ -42,6 +42,7 @@
         }
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
+            border-radius: 10px;
         }
 
         /* Themed Backgrounds for Sections */
@@ -67,13 +68,14 @@
     <header class="bg-black text-white py-8 md:py-12 rounded-b-3xl shadow-2xl header-bg-theme">
         <div class="container mx-auto px-4 sm:px-6 flex flex-col items-center mb-8">
             <!-- Centered Logos - Now always side-by-side, fixed height, and original aspect ratio -->
-            <div class="flex items-center justify-center gap-6 mb-4">
-                <img id="logo-left-center" src="vayu with BG.png" alt="Central Logo 1" class="h-24 w-auto object-contain border-2 border-yellow-500 shadow-md flex-shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/128x96/FFFFFF/000000?text=Logo+1';">
-                <img id="logo-right-center" src="TN s with BG.png" alt="Central Logo 2" class="h-24 w-auto object-contain border-2 border-yellow-500 shadow-md flex-shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/128x96/FFFFFF/000000?text=Logo+2';">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-4">
+                <img id="logo-left-center" src="vayu with BG.png" alt="Central Logo 1" class="h-20 sm:h-24 w-auto object-contain border-2 border-yellow-500 shadow-md flex-shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/128x96/FFFFFF/000000?text=Logo+1';">
+                <img id="logo-right-center" src="TN s with BG.png" alt="Central Logo 2" class="h-20 sm:h-24 w-auto object-contain border-2 border-yellow-500 shadow-md flex-shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/128x96/FFFFFF/000000?text=Logo+2';">
             </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 sm:mb-6 leading-tight text-white">UAV Innovation</h1>
             <p class="text-lg sm:text-xl md:text-2xl mb-8 font-light text-gray-300 text-center max-w-4xl mx-auto">Transforming India into a Global Hub for UAV Innovation</p>
             <!-- Hero image placeholder - user will include manually -->
-            <div class="relative w-full h-64 sm:h-80 md:h-96 rounded-2xl overflow-hidden mb-12 shadow-xl border-4 border-yellow-500">
+            <div class="relative w-full h-56 sm:h-72 md:h-96 rounded-2xl overflow-hidden mb-12 shadow-xl border-4 border-yellow-500">
                 <img id="hero-image" src="cover.png" alt="Hero Image Placeholder" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/900x400/CCCCCC/333333?text=Hero+Image';">
                 <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent bg-opacity-70 flex items-end justify-center p-4 sm:p-8 text-center">
                     <p class="text-xl sm:text-2xl md:text-4xl font-bold leading-tight drop-shadow-md text-white">Advancing India's Drone Ecosystem through Indigenous Development</p>
@@ -115,7 +117,7 @@
         <div class="container mx-auto relative z-10">
             <h2 class="text-4xl sm:text-5xl font-bold text-center mb-8 sm:mb-12 text-black">Advanced Drone Solutions</h2>
             <p class="text-base sm:text-xl text-center mb-12 sm:mb-16 max-w-5xl mx-auto leading-relaxed text-gray-700">Leveraging in-house 3D printing and cutting-edge engineering, we deliver versatile and precise drone solutions tailored for various industries.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 <!-- Solution 1: Agricultural Spraying -->
                 <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg card-hover transition-all duration-300 border-b-4 border-yellow-500">
                     <div class="w-full h-40 sm:h-48 relative rounded-lg overflow-hidden mb-4 sm:mb-6 shadow-md">
@@ -296,87 +298,88 @@
                 <!-- Replace 'https://placehold.co/120x60/FFFFFF/000000?text=Partner+Logo' with your actual logo URL -->
                 <!-- Add alt text that describes the partner for accessibility -->
 
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="1d.jpeg" alt="Partner Logo 1" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P1';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="2d.jpeg" alt="Partner Logo 2" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P2';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="3d.jpg" alt="Partner Logo 3" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P3';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="4d.png" alt="Partner Logo 4" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P4';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="5d.png" alt="Partner Logo 5" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P5';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="6d.jpeg" alt="Partner Logo 6" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P6';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="7d.jpeg" alt="Partner Logo 7" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P7';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="8d.jpeg" alt="Partner Logo 8" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P8';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="9d.jpeg" alt="Partner Logo 9" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P9';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="10d.jpeg" alt="Partner Logo 10" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P10';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="11d.jpeg" alt="Partner Logo 11" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P11';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="12d.jpg" alt="Partner Logo 12" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P12';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="13d.jpg" alt="Partner Logo 13" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P13';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="14d.jpeg" alt="Partner Logo 14" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P14';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="15d.jpeg" alt="Partner Logo 15" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P15';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="16d.jpeg" alt="Partner Logo 16" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P16';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="17d.jpeg" alt="Partner Logo 17" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P17';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="18d.png" alt="Partner Logo 18" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P18';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="19d.jpg" alt="Partner Logo 19" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P19';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="20d.jpeg" alt="Partner Logo 20" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P20';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="21d.jpeg" alt="Partner Logo 21" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P21';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="22d.jpeg" alt="Partner Logo 22" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P22';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
                     <img src="23d.jpeg" alt="Partner Logo 23" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P23';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
-                    <img src="24d.png" alt="Partner Logo 23" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P24';">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                    <img src="24d.png" alt="Partner Logo 24" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P24';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
-                    <img src="25d.jpeg" alt="Partner Logo 23" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P25';">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                    <img src="25d.jpeg" alt="Partner Logo 25" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P25';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
-                    <img src="26d.jpeg" alt="Partner Logo 23" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P26';">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                    <img src="26d.jpeg" alt="Partner Logo 26" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P26';">
                 </div>
-                <div class="w-32 h-20 sm:w-40 sm:h-24 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
-                    <img src="27d.jpeg" alt="Partner Logo 23" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P27';">
+                <div class="w-28 h-16 sm:w-32 sm:h-20 bg-white rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200 p-2">
+                    <img src="27d.jpeg" alt="Partner Logo 27" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/CCCCCC/333333?text=P27';">
                 </div>
+            </div>
         </div>
     </section>
 
